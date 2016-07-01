@@ -9,7 +9,6 @@ group :development do
 end
 
 group :test do
-  gem "minitest",           "~> 5.3"
   gem "rinku",              "~> 1.7",   :require => false
   gem "gemoji",             "~> 2.0",   :require => false
   gem "RedCloth",           "~> 4.2.9", :require => false
@@ -28,4 +27,6 @@ group :test do
   if RUBY_VERSION < "1.9.3"
     gem "activesupport", ">= 2", "< 4"
   end
+
+  gem "appraisal"
 end
